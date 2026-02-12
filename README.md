@@ -63,13 +63,14 @@ Este repositorio incluye un modo DEMO que utiliza:
 Permite ejecutar el sistema sin infraestructura empresarial.
 
 ### Ejecutar DEMO
-
+```
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 set APP_MODE=DEMO
 python -m src.app.main
 
+```
 ## 🏢 Modo PROD (Entorno Empresarial)
 
 En producción el sistema:
@@ -120,5 +121,6 @@ Cristian Córdoba Arroyave
 Desarrollador enfocado en automatización empresarial y optimización de procesos.
 
 GitHub: https://github.com/cordoba1991
+
 
 
