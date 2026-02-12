@@ -39,13 +39,19 @@ La automatización:
 El proyecto está estructurado de forma modular:
 
 src/app/
-│
+
 ├── main.py → Orquestador DEMO / PROD
+
 ├── payroll.py → Lógica de cálculo de horas
+
 ├── events.py → Normalización de eventos
+
 ├── zkteco_prod.py → Integración biométrico (PROD)
+
 ├── zktime_db.py → Lectura base de datos ZKTime (PROD)
+
 ├── timeparse.py → Parsing de fechas y horas
+
 ├── config.py → Carga de configuración por entorno
 
 🏢 Modo PROD (Entorno Empresarial)
@@ -58,3 +64,4 @@ Genera reporte consolidado para el área de nómina
 Copia automáticamente el archivo a carpeta compartida
 La configuración productiva se gestiona mediante variables de entorno (.env) 
 que no se incluyen en este repositorio por razones de seguridad.
+
