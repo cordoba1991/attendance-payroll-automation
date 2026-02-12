@@ -36,39 +36,58 @@ La automatización:
 
 ## 🏗 Arquitectura
 
-El proyecto está estructurado de forma modular:
-
 src/app/
-
-├── main.py → Orquestador DEMO / PROD
-
-├── payroll.py → Lógica de cálculo de horas
-
-├── events.py → Normalización de eventos
-
-├── zkteco_prod.py → Integración biométrico (PROD)
-
-├── zktime_db.py → Lectura base de datos ZKTime (PROD)
-
-├── timeparse.py → Parsing de fechas y horas
-
-├── config.py → Carga de configuración por entorno
+    main.py → Orquestador DEMO / PROD
+      payroll.py → Lógica de cálculo de horas
+        events.py → Normalización de eventos
+          zkteco_prod.py → Integración biométrico (PROD)
+            zktime_db.py → Lectura base de datos ZKTime (PROD)
+              timeparse.py → Parsing de fechas y horas
+                config.py → Carga de configuración por entorno
 
 
+Separación clara entre:
 
-🏢 Modo PROD (Entorno Empresarial)
+- 🔹 Lógica de negocio  
+- 🔹 Infraestructura  
+- 🔹 Configuración  
+- 🔹 Exportación Excel  
+
+---
+
+## 🧪 Modo DEMO (Repositorio Público)
+
+Este repositorio incluye un modo DEMO que utiliza:
+
+
+Permite ejecutar el sistema sin infraestructura empresarial.
+
+### Ejecutar DEMO
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+set APP_MODE=DEMO
+python -m src.app.main
+
+# 🏢 Modo PROD (Entorno Empresarial)
 
 En producción el sistema:
+
 Detecta el dispositivo biométrico en red
+
 Extrae registros de asistencia
+
 Cruza información con base de datos ZKTime
+
 Genera reporte consolidado para el área de nómina
+
 Copia automáticamente el archivo a carpeta compartida
-La configuración productiva se gestiona mediante variables de entorno (.env) 
-que no se incluyen en este repositorio por razones de seguridad.
 
+La configuración productiva se gestiona mediante variables de entorno (.env) que no se incluyen en este repositorio por razones de seguridad.
 
-🛠 Tecnologías Utilizadas
+#🛠 Tecnologías Utilizadas
 
 Python
 
@@ -82,7 +101,7 @@ Arquitectura modular
 
 Control de versiones con Git
 
-🎯 Impacto Técnico
+#🎯 Impacto Técnico
 
 Este proyecto demuestra:
 
@@ -96,10 +115,9 @@ Separación de entornos DEMO / PROD
 
 Buenas prácticas de configuración segura
 
-📎 Autor
+#📎 Autor
 
 Cristian Córdoba
 Desarrollador enfocado en automatización empresarial y optimización de procesos.
 
 GitHub: https://github.com/cordoba1991
-
