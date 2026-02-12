@@ -54,6 +54,8 @@ src/app/
 
 ├── config.py → Carga de configuración por entorno
 
+
+
 🏢 Modo PROD (Entorno Empresarial)
 
 En producción el sistema:
@@ -64,4 +66,40 @@ Genera reporte consolidado para el área de nómina
 Copia automáticamente el archivo a carpeta compartida
 La configuración productiva se gestiona mediante variables de entorno (.env) 
 que no se incluyen en este repositorio por razones de seguridad.
+
+
+🛠 Tecnologías Utilizadas
+
+Python
+
+OpenPyXL
+
+PyZK
+
+SQLite
+
+Arquitectura modular
+
+Control de versiones con Git
+
+🎯 Impacto Técnico
+
+Este proyecto demuestra:
+
+Automatización de procesos empresariales
+
+Reducción medible de tiempo operativo
+
+Eliminación de procesos manuales críticos
+
+Separación de entornos DEMO / PROD
+
+Buenas prácticas de configuración segura
+
+📎 Autor
+
+Cristian Córdoba
+Desarrollador enfocado en automatización empresarial y optimización de procesos.
+
+GitHub: https://github.com/cordoba1991
 
