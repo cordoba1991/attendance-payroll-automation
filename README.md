@@ -35,7 +35,7 @@ La automatización:
 ---
 
 ## 🏗 Arquitectura
-
+```
 src/app/
     main.py → Orquestador DEMO / PROD
       payroll.py → Lógica de cálculo de horas
@@ -44,7 +44,7 @@ src/app/
             zktime_db.py → Lectura base de datos ZKTime (PROD)
               timeparse.py → Parsing de fechas y horas
                 config.py → Carga de configuración por entorno
-
+```
 
 Separación clara entre:
 
@@ -121,6 +121,7 @@ Cristian Córdoba Arroyave
 Desarrollador enfocado en automatización empresarial y optimización de procesos.
 
 GitHub: https://github.com/cordoba1991
+
 
 
 
