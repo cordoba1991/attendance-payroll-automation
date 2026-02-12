@@ -71,7 +71,7 @@ pip install -r requirements.txt
 set APP_MODE=DEMO
 python -m src.app.main
 
-# 🏢 Modo PROD (Entorno Empresarial)
+### 🏢 Modo PROD (Entorno Empresarial)
 
 En producción el sistema:
 
@@ -87,7 +87,7 @@ Copia automáticamente el archivo a carpeta compartida
 
 La configuración productiva se gestiona mediante variables de entorno (.env) que no se incluyen en este repositorio por razones de seguridad.
 
-#🛠 Tecnologías Utilizadas
+### 🛠 Tecnologías Utilizadas
 
 Python
 
@@ -101,7 +101,7 @@ Arquitectura modular
 
 Control de versiones con Git
 
-#🎯 Impacto Técnico
+### 🎯 Impacto Técnico
 
 Este proyecto demuestra:
 
@@ -115,9 +115,10 @@ Separación de entornos DEMO / PROD
 
 Buenas prácticas de configuración segura
 
-#📎 Autor
+### 📎 Autor
 
-Cristian Córdoba
+Cristian Córdoba Arroyave
 Desarrollador enfocado en automatización empresarial y optimización de procesos.
 
 GitHub: https://github.com/cordoba1991
+
